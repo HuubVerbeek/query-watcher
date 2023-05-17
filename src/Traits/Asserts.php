@@ -7,6 +7,8 @@ use PHPUnit\Framework\Assert as PHPUnit;
 trait Asserts
 {
     /**
+     * Assert that duplicate queries were triggered
+     *
      * @return void
      */
     public function assertHasDuplicateQueries(): void
@@ -20,6 +22,8 @@ trait Asserts
     }
 
     /**
+     * Assert that no duplicate queries were triggered
+     *
      * @return void
      */
     public function assertNoDuplicateQueries(): void
@@ -33,6 +37,8 @@ trait Asserts
     }
 
     /**
+     * Assert that slow queries were triggered
+     *
      * @return void
      */
     public function assertHasSlowQueries(): void
@@ -46,6 +52,8 @@ trait Asserts
     }
 
     /**
+     * Assert that no slow queries were triggered
+     *
      * @return void
      */
     public function assertNoSlowQueries(): void
