@@ -16,8 +16,15 @@ QueryWatcher::watch();
 ```
 This will enable the query watcher and start collecting executed queries.
 
+#### All Queries
+To retrieve all the queries you can use the `queries` method:
+
+```php
+$allQueries = QueryWatcher::queries();
+```
+
 #### Slow Queries
-To retrieve all the slow queries (queries that exceed a certain execution time), you can use the `slowQueries` method:
+To retrieve the slow queries (queries that exceed a certain execution time), you can use the `slowQueries` method:
 
 ```php
 $slowQueries = QueryWatcher::slowQueries();
