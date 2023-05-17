@@ -53,7 +53,7 @@ class CatchQueryTest extends TestCase
 
         $slowAfter = 0.5;
 
-        QueryWatcher::isSlowAfter($slowAfter)->watch();
+        QueryWatcher::setSlowThreshold($slowAfter)->watch();
 
         while ($i <= $expected) {
             $this->fireEvent(
