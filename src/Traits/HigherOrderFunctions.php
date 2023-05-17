@@ -10,7 +10,7 @@ use Illuminate\Support\Collection;
 trait HigherOrderFunctions
 {
     /**
-     * Map empty bindings to enum
+     * Map empty bindings to enum closure
      *
      * @return Closure
      */
