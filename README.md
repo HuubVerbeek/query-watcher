@@ -17,7 +17,7 @@ QueryWatcher::watch();
 This will enable the query watcher and start collecting executed queries.
 
 #### Slow Queries
-To retrieve all the slow queries (queries that exceed a certain execution time), you can use the slowQueries method:
+To retrieve all the slow queries (queries that exceed a certain execution time), you can use the `slowQueries` method:
 
 ```php
 $slowQueries = QueryWatcher::slowQueries();
@@ -30,7 +30,7 @@ QueryWatcher::setSlowThreshold(2.0); // Set slow threshold to 2 seconds
 
 ```
 #### Duplicate Queries
-To identify duplicate queries (queries with the same SQL statement and bindings), you can use the duplicateQueries method:
+To identify duplicate queries (queries with the same SQL statement and bindings), you can use the `duplicateQueries` method:
 
 ```php
 $duplicateQueries = QueryWatcher::duplicateQueries();
