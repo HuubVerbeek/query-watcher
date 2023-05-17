@@ -46,10 +46,10 @@ $duplicateQueries = QueryWatcher::duplicateQueries();
 #### Assertions
 The QueryWatcher package also provides assertion methods to facilitate testing. These methods allow you to assert whether certain conditions are met based on the executed queries.
 
-- `assertHasDuplicateQueries`: Assert that duplicate queries were triggered.
-- `assertNoDuplicateQueries`: Assert that no duplicate queries were triggered.
-- `assertHasSlowQueries`: Assert that slow queries were triggered.
-- `assertNoSlowQueries`: Assert that no slow queries were triggered.
+- `assertHasDuplicateQueries`: Assert that duplicate queries were executed.
+- `assertNoDuplicateQueries`: Assert that no duplicate queries were executed.
+- `assertHasSlowQueries`: Assert that slow queries were executed.
+- `assertNoSlowQueries`: Assert that no slow queries were executed.
 
 Here's an example of using assertions in a test case:
 
@@ -58,7 +58,7 @@ public function test_queries()
 {
     QueryWatcher::watch();
 
-    // Code that triggers queries
+    // Code that executes queries
 
     QueryWatcher::assertNoDuplicateQueries();
     
