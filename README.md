@@ -47,7 +47,7 @@ The QueryWatcher package also provides assertion methods to facilitate testing. 
 Here's an example of using assertions in a test case:
 
 ```php
-public function testQueries()
+public function test_queries()
 {
     QueryWatcher::watch();
 
