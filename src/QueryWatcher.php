@@ -34,7 +34,7 @@ class QueryWatcher
     }
 
     /**
-     * Start watching.
+     * Start watching
      *
      * @return static
      */
@@ -61,7 +61,7 @@ class QueryWatcher
     }
 
     /**
-     * Get all the queries.
+     * Get all the queries
      *
      * @return Collection
      */
@@ -71,7 +71,7 @@ class QueryWatcher
     }
 
     /**
-     * Get all the slow queries.
+     * Get all the slow queries
      *
      * @return Collection
      */
@@ -81,7 +81,7 @@ class QueryWatcher
     }
 
     /**
-     * Get all the duplicate queries.
+     * Get all the duplicate queries
      *
      * @return Collection
      */
