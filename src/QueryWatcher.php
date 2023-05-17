@@ -44,7 +44,7 @@ class QueryWatcher
     /**
      * Set the value in seconds after which a query is considered to be slow
      */
-    public function isSlowAfter(float $slowAfter): static
+    public function setSlowThreshold(float $slowAfter): static
     {
         $this->slowAfter = $slowAfter;
 
