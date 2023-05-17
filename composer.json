@@ -1,0 +1,40 @@
+{
+  "name": "huubverbeek/query-watcher",
+  "description": "A package to watch queries in your application.",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Huub Verbeek",
+      "email": "verbeekwerk@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "HuubVerbeek\\QueryWatcher\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "HuubVerbeek\\QueryWatcher\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-f": "vendor/bin/phpunit --filter",
+    "pint": "vendor/bin/pint",
+    "pint-t": "vendor/bin/pint --test"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "HuubVerbeek\\QueryWatcher\\QueryWatcherServiceProvider"
+      ]
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "orchestra/testbench": "^7.0",
+    "laravel/pint": "^0.2.1"
+  }
+}
