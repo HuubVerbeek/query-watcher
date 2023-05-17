@@ -15,15 +15,11 @@ class QueryWatcher
 
     /**
      * Collection of the watched queries
-     *
-     * @var Collection
      */
     protected Collection $queries;
 
     /**
      * The value in seconds after which a query is considered to be slow
-     *
-     * @var float
      */
     protected float $slowAfter;
 
@@ -35,8 +31,6 @@ class QueryWatcher
 
     /**
      * Start watching
-     *
-     * @return static
      */
     public function watch(): static
     {
@@ -49,9 +43,6 @@ class QueryWatcher
 
     /**
      * Set the value in seconds after which a query is considered to be slow
-     *
-     * @param  float  $slowAfter
-     * @return static
      */
     public function isSlowAfter(float $slowAfter): static
     {
@@ -62,8 +53,6 @@ class QueryWatcher
 
     /**
      * Get all the queries
-     *
-     * @return Collection
      */
     public function queries(): Collection
     {
@@ -72,8 +61,6 @@ class QueryWatcher
 
     /**
      * Get all the slow queries
-     *
-     * @return Collection
      */
     public function slowQueries(): Collection
     {
@@ -82,8 +69,6 @@ class QueryWatcher
 
     /**
      * Get all the duplicate queries
-     *
-     * @return Collection
      */
     public function duplicateQueries(): Collection
     {

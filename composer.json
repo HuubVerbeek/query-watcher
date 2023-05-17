@@ -1,6 +1,6 @@
 {
   "name": "huubverbeek/query-watcher",
-  "description": "A package to watch queries in your application.",
+  "description": "A package to watch queries in your Laravel application -- including PHPUnit asserts.",
   "type": "library",
   "authors": [
     {
@@ -35,6 +35,6 @@
   "require-dev": {
     "phpunit/phpunit": "^9.5",
     "orchestra/testbench": "^7.0",
-    "laravel/pint": "^0.2.1"
+    "laravel/pint": "^1.2.1"
   }
 }

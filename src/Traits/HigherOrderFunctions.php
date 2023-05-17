@@ -11,8 +11,6 @@ trait HigherOrderFunctions
 {
     /**
      * Map empty bindings to enum closure
-     *
-     * @return Closure
      */
     private function mapEmptyBindingsToEnum(): Closure
     {
@@ -23,8 +21,6 @@ trait HigherOrderFunctions
 
     /**
      * Group by duplicate bindings closure
-     *
-     * @return Closure
      */
     private function groupByDuplicateColumn(): Closure
     {

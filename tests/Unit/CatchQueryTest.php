@@ -20,8 +20,8 @@ class CatchQueryTest extends TestCase
     {
         event(new QueryExecuted(
             $sql ?? $this->defaultSql,
-                $bindings ?? [],
-                $time ?? $this->defaultTime,
+            $bindings ?? [],
+            $time ?? $this->defaultTime,
             app(ConnectionInterface::class))
         );
     }
