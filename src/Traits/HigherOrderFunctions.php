@@ -22,7 +22,7 @@ trait HigherOrderFunctions
     /**
      * Group by duplicate bindings closure
      */
-    private function groupByDuplicateColumn(): Closure
+    private function groupByDuplicateBindings(): Closure
     {
         return fn (Collection $group) => $group->groupBy('bindings')->filter(
             fn (Collection $group) => $group->count() >= 2
