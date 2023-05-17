@@ -2,6 +2,8 @@
   "name": "huubverbeek/query-watcher",
   "description": "A package to watch queries in your Laravel application -- including PHPUnit asserts.",
   "type": "library",
+  "keywords": ["framework", "laravel", "query-watcher", "watcher", "queries", "testing"],
+  "license": "MIT",
   "authors": [
     {
       "name": "Huub Verbeek",
