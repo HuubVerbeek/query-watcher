@@ -6,6 +6,9 @@ You can install the QueryWatcher package via Composer by running the following c
 
 `composer require huubverbeek/query-watcher`
 
+#### Requirements
+This package requires php 8.1 or higher.
+
 #### Usage
 To start watching queries, you can use the `watch` method provided by the `QueryWatcher` facade:
 
