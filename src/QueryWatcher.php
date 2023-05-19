@@ -26,7 +26,21 @@ class QueryWatcher
     public function __construct()
     {
         $this->queries = collect();
+
         $this->slowAfter = 1.0;
+
+        /**
+         * Because QueryWatcher is a singleton the listener will only be registered once.
+         */
+        $this->registerListener();
+    }
+
+    /**
+     * Register listener that listens to executed queries
+     */
+    private function registerListener(): void
+    {
+        Event::listen(QueryExecuted::class, fn (QueryExecuted $query) => $this->queries->push($query));
     }
 
     /**
@@ -35,8 +49,6 @@ class QueryWatcher
     public function watch(): static
     {
         $this->queries = collect();
-
-        Event::listen(QueryExecuted::class, fn (QueryExecuted $query) => $this->queries->push($query));
 
         return $this;
     }
