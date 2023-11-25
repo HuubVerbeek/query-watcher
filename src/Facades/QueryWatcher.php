@@ -4,6 +4,11 @@ namespace HuubVerbeek\QueryWatcher\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
+/**
+ * Class QueryWatcher
+ *
+ * @mixin \HuubVerbeek\QueryWatcher\QueryWatcher
+ */
 class QueryWatcher extends Facade
 {
     /**

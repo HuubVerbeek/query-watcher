@@ -25,7 +25,7 @@ trait HigherOrderFunctions
     private function groupByDuplicateBindings(): Closure
     {
         return fn (Collection $group) => $group->groupBy('bindings')->filter(
-            fn (Collection $group) => $group->count() >= 2
+            fn (Collection $group): bool => $group->count() >= 2
         );
     }
 }

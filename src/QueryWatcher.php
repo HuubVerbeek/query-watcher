@@ -87,7 +87,7 @@ class QueryWatcher
         return $this->queries
             ->map($this->mapEmptyBindingsToEnum())
             ->groupBy('sql')
-            ->reject(fn (Collection $group) => $group->count() <= 1)
+            ->reject(fn (Collection $group): bool => $group->count() <= 1)
             ->transform($this->groupByDuplicateBindings())
             ->flatten();
     }
