@@ -4,7 +4,7 @@ namespace HuubVerbeek\QueryWatcher\Traits;
 
 use PHPUnit\Framework\Assert as PHPUnit;
 
-trait Asserts
+trait HasAsserts
 {
     /**
      * Assert that duplicate queries were executed

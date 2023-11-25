@@ -2,16 +2,16 @@
 
 namespace HuubVerbeek\QueryWatcher;
 
-use HuubVerbeek\QueryWatcher\Traits\Asserts;
-use HuubVerbeek\QueryWatcher\Traits\HigherOrderFunctions;
+use HuubVerbeek\QueryWatcher\Traits\HasAsserts;
+use HuubVerbeek\QueryWatcher\Traits\HasHigherOrderFunctions;
 use Illuminate\Database\Events\QueryExecuted;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Event;
 
 class QueryWatcher
 {
-    use HigherOrderFunctions;
-    use Asserts;
+    use HasHigherOrderFunctions;
+    use HasAsserts;
 
     /**
      * Collection of the watched queries

@@ -7,7 +7,7 @@ use HuubVerbeek\QueryWatcher\Enums\Bindings;
 use Illuminate\Database\Events\QueryExecuted;
 use Illuminate\Support\Collection;
 
-trait HigherOrderFunctions
+trait HasHigherOrderFunctions
 {
     /**
      * Map empty bindings to enum closure
