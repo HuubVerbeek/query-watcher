@@ -6,12 +6,12 @@ use Illuminate\Support\ServiceProvider;
 
 class QueryWatcherServiceProvider extends ServiceProvider
 {
-    public function register()
+    public function register(): void
     {
         //
     }
 
-    public function boot()
+    public function boot(): void
     {
         app()->singleton('querywatcher', fn () => new QueryWatcher());
     }
