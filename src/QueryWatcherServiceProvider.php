@@ -13,6 +13,6 @@ class QueryWatcherServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
-        app()->singleton('querywatcher', fn () => new QueryWatcher());
+        app()->singleton('querywatcher', fn (): QueryWatcher => new QueryWatcher());
     }
 }

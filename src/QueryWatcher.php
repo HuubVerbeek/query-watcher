@@ -3,14 +3,14 @@
 namespace HuubVerbeek\QueryWatcher;
 
 use HuubVerbeek\QueryWatcher\Traits\HasAsserts;
-use HuubVerbeek\QueryWatcher\Traits\HasHigherOrderFunctions;
+use HuubVerbeek\QueryWatcher\Traits\HasHigherOrderFunctionHelpers;
 use Illuminate\Database\Events\QueryExecuted;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Event;
 
 class QueryWatcher
 {
-    use HasHigherOrderFunctions;
+    use HasHigherOrderFunctionHelpers;
     use HasAsserts;
 
     /**
@@ -40,7 +40,9 @@ class QueryWatcher
      */
     private function registerListener(): void
     {
-        Event::listen(QueryExecuted::class, fn (QueryExecuted $query) => $this->queries->push($query));
+        Event::listen(QueryExecuted::class,
+            fn (QueryExecuted $query): Collection => $this->queries->push($query)
+        );
     }
 
     /**
