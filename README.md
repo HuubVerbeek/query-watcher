@@ -33,7 +33,7 @@ To retrieve the slow queries (queries that exceed a certain execution time), you
 $slowQueries = QueryWatcher::slowQueries();
 ```
 
-You can also set a custom threshold for slow queries by using the `setSlowThreshold` method:
+You can also set a custom threshold (the default is one second) for slow queries by using the `setSlowThreshold` method:
 
 ```php
 QueryWatcher::setSlowThreshold(2.0); // Set slow threshold to 2 seconds
